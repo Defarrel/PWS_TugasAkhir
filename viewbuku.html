@@ -98,6 +98,19 @@
         width: 70%; 
         height: 100%;
     }
+
+    #book-list {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 300px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        min-width: 250px; 
+        max-width: 300px; 
+    }
 </style>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -109,13 +122,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto"> 
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catalog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">My Books</a>
+                        <a class="nav-link active" href="/viewbuku">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/">Logout</a> 
@@ -126,7 +133,6 @@
     </nav>
 
     <div class="container mt-4">
-        <h1>Selamat Datang di Perpustakaan Gloydius</h1>
         <div class="row mt-4 justify-content-center">
             <div class="col-md-8 book-column">
                 <div class="search-form">
